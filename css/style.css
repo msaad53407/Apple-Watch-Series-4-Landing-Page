@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Importing other CSS files */
+
+@import url("./sections/header.css");
+@import url("./sections/hero.css");
+@import url("./sections/feature-section1.css");
+@import url("./sections/feature-section2.css");
+@import url("./sections/feature-section3.css");
+@import url("./sections/feature-section4.css");
+@import url("./sections/feature-section5.css");
+@import url("./sections/feature-section6.css");
+@import url("./sections/contact.css");
+@import url("./sections/notification-modal");
+@import url("./sections/footer.css");
+@import url("./sections/responsive.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --playfair-display: "Playfair Display", serif;
+  --roboto: "Roboto", sans-serif;
+  --primary-color: rgb(11, 11, 11);
+  --secondary-color: #e10a40;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button {
+  outline: none;
+  border: none;
+  padding: 16px 36px;
+  cursor: pointer;
+  align-self: flex-start;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.primary-button:hover {
+  background-color: #941031;
+}
+
+.features-section__logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px -5px 10 -5px;
+}
+
+.features-section__logo img {
+  width: 64px;
+  height: 64px;
+}
+
+.secondary-button {
+  border: 2px solid white;
+  background: transparent;
+  cursor: pointer;
+  align-self: flex-start;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.scroll__button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(19, 19, 19);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.scroll__button.scroll__button-active {
+  display: flex;
+}
+
+.scroll__button img {
+  object-fit: contain;
+  height: 36px;
+  width: 36px;
+}

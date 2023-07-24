@@ -1,0 +1,45 @@
+.subscription__notification {
+  display: none;
+  gap: 12px;
+  opacity: 1;
+  padding: 32px 26px;
+  border-radius: 12px;
+  min-width: 200px;
+  position: fixed;
+  bottom: 1;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.706);
+  color: white;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription__notification.subscription__notification-active {
+  display: flex;
+}
+
+.subscription__notification-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.subscription__notification img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.subscription__notification p {
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  letter-spacing: 1px;
+}

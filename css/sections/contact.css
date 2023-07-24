@@ -1,0 +1,75 @@
+.contact__form {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: auto;
+  flex-direction: column;
+  padding: 32px 64px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.submit-button.primary-button {
+  align-self: center;
+}
+
+.contact__name-field {
+  display: flex;
+  gap: 25px;
+  align-self: center;
+  width: 100%;
+}
+
+.first-name {
+  flex: 1;
+}
+
+.last-name {
+  flex: 1;
+}
+
+.form__heading {
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--roboto);
+  font-size: 42px;
+  margin: 25px 0 10px 0;
+  color: var(--secondary-color);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label span {
+  font-size: 20px;
+  font-family: var(--roboto);
+  font-weight: 500;
+}
+
+#comments {
+  resize: none;
+}
+
+input:not(input[type="submit"]) {
+  border: 1px solid rgba(0, 0, 0, 0.708);
+  min-height: 30px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+input:not(input[type="submit"]):focus,
+textarea:focus {
+  outline: 2px solid var(--secondary-color);
+}
