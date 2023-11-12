@@ -10,6 +10,10 @@
   gap: 25px;
 }
 
+.w-full {
+  width: 50%;
+}
+
 .submit-button.primary-button {
   align-self: center;
 }
@@ -38,10 +42,17 @@
   color: var(--secondary-color);
 }
 
-label {
+label:not(label.gender_label) {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+label.gender_label {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 
 label span {
@@ -50,11 +61,23 @@ label span {
   font-weight: 500;
 }
 
+label.gender_label span {
+  font-size: 18px;
+  font-family: var(--roboto);
+  font-weight: 400;
+  width: 20%;
+}
+
+#advertisments option {
+  cursor: pointer;
+}
+
 #comments {
   resize: none;
 }
 
-input:not(input[type="submit"]) {
+input[type="text"],
+input[type="email"] {
   border: 1px solid rgba(0, 0, 0, 0.708);
   min-height: 30px;
   padding: 10px 15px;
@@ -70,6 +93,7 @@ textarea {
 }
 
 input:not(input[type="submit"]):focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: 2px solid var(--secondary-color);
 }

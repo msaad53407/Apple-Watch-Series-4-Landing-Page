@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="shortcut icon"
@@ -288,6 +288,64 @@
             data-aos="fade-in"
           />
         </label>
+        <div style="display: flex" class="contact__name-field">
+          <label for="gender" class="w-full">
+            <span>Gender:</span>
+            <label for="male" class="gender_label">
+              <span>Male</span>
+              <input
+                class="form__field"
+                type="radio"
+                name="gender"
+                value="male"
+                id="male"
+                required
+                data-aos="fade-in"
+              />
+            </label>
+            <label for="female" class="gender_label">
+              <span>Female</span>
+              <input
+                class="form__field"
+                type="radio"
+                name="gender"
+                value="female"
+                id="female"
+                required
+                data-aos="fade-in"
+              />
+            </label>
+            <label for="other" class="gender_label">
+              <span>Other</span>
+              <input
+                class="form__field"
+                type="radio"
+                name="gender"
+                value="other"
+                id="other"
+                required
+                data-aos="fade-in"
+              />
+            </label>
+          </label>
+
+          <label for="advertisment" class="w-full">
+            <span>How did you get to know about us?</span>
+            <select
+              name="advertisment"
+              id="advertisment"
+              data-aos="fade-in"
+              required
+            >
+              <option disabled selected>Select</option>
+              <option value="tv">TV</option>
+              <option value="social-media">Social Media</option>
+              <option value="electronic-media">Electronic Media</option>
+              <option value="banners">Banners</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
         <label for="comments">
           <span>Describe your queries here:</span>
           <textarea
@@ -300,6 +358,24 @@
             data-aos="fade-in"
             required
           ></textarea>
+        </label>
+        <label for="tos" style="flex-direction: row; align-self: center">
+          <span id="tos-span" style="text-align: center"
+            >Do you Accept out
+            <a
+              href="#"
+              style="text-decoration: underline; color: var(--secondary-color)"
+              >Terms and Conditions</a
+            >?</span
+          >
+          <input
+            id="tos"
+            name="tos"
+            type="checkbox"
+            style="padding: 5px; width: 15px; height: auto"
+            required
+            data-aos="fade-in"
+          />
         </label>
         <input
           type="submit"
@@ -338,6 +414,7 @@
             &copy; Copyright Apple Watch Series 4 2023. <br />All Rights
             Reserved.
           </p>
+          <p>Made with ❤️ by Muhammad Saad</p>
         </div>
       </div>
     </footer>

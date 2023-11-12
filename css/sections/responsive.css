@@ -238,6 +238,16 @@
   .contact__name-field {
     flex-direction: column;
   }
+
+  .w-full {
+    width: 100%;
+  }
+
+  #tos-span {
+    font-size: 14px;
+    text-align: center;
+  }
+
   textarea {
     width: 100%;
   }
